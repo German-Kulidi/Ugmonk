@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ugmonk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__top">
+        <a class="header__logo" href="#">
+          <h3 class="header__logo-title">Ugmonk</h3>
+          <img class="header__logo-img" src="images/header/logo.svg" alt="logo">
+        </a>
+        <div class="header__burger">
+          <span></span>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#">Men</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Women</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Objects</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Analog</a></li>
+          </ul>
+        </nav>
+        <div class="tabs">
+          <div class="tabs__items">
+            <a class="tabs__item" href="#tab_journal">Journal</a>
+            <a class="tabs__item" href="#tab_search">Search</a>
+            <a class="tabs__item" href="#tab_login">Login</a>
+            <a class="tabs__item tabs__item--icon" href="#tab_korz">
+              <img class="tab__icon" src="images/header/korzina.svg" alt="korzina">
+            </a>
+          </div>
+          <div class="tabs__body">
+            <div class="tabs__block tabs__block--journal" id="tab_journal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum esse placeat quo sint cum. Enim aperiam
+              hic officia, maxime nobis ipsam voluptatem distinctio excepturi laudantium in doloremque ut eligendi
+              voluptatum.
+            </div>
+            <div class="tabs__block tabs__block--search" id="tab_search">
+              <form class="tabs__form-search" action="">
+                <input class="tabs__input" type="text" placeholder="Search">
+                <button class="tabs__search-btn" type="submit">
+                  <img src="images/header/search-icon.svg" alt="search icon">
+                </button>
+              </form>
+            </div>
+            <div class="tabs__block tabs__block--login" id="tab_login">
+              <form class="tabs__form-login" action="">
+                <input class="tabs__input" type="email" placeholder="Login">
+                <input class="tabs__input" type="password" placeholder="Password">
+                <button class="tabs__login-btn" type="submit">Enter</button>
+              </form>
+            </div>
+            <div class="tabs__block tabs__block--korz" id="tab_korz">
+              <div class="tabs__box-korz"><a href="#">go to cart</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <h4 class="header__title">Analog: The Simplest Productivity System</h4>
+        <a class="header__shop-btn shop-btn" href="#">Shop now</a>
+      </div>
+    </header>
+    <main class="main">
+      <section class="gallery">
+        <div class="container">
+          <div class="gallery__buttons">
+            <button class="gallery__btn" data-filter=".arrivals">New Arrivals</button>
+            <button class="gallery__btn" data-filter=".analog">Analog</button>
+            <button class="gallery__btn" data-filter=".stock">Final Stock</button>
+            <button class="gallery__btn" data-filter=".sellers">Best Sellers</button>
+            <button class="gallery__btn" data-filter=".clothing">Clothing</button>
+            <button class="gallery__btn" data-filter=".objects">Objects</button>
+          </div>
+          <div class="gallery__inner">
+            <div class="gallery__items mix arrivals">
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/1.jpg" alt="images">
+                  <p class="gallery__name">Analog Starter Kit <span>(Walnut)</span></p>
+                  <p class="gallery__sale">$103.00 <span>$89.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/2.jpg" alt="images">
+                  <p class="gallery__name">Analog Cards <span>(3-Pack)</span></p>
+                  <p class="gallery__sale">$39.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/3.jpg" alt="images">
+                  <p class="gallery__name">The Analog Complete Set</p>
+                  <p class="gallery__sale">$137.00 <span>$130.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/4.jpg" alt="images">
+                  <p class="gallery__name">Pen Tray <span>(Walnut)</span></p>
+                  <p class="gallery__sale">$38.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/5.jpg" alt="images">
+                  <p class="gallery__name">Pen Tray <span>(Maple)</span></p>
+                  <p class="gallery__sale">$38.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/6.jpg" alt="images">
+                  <p class="gallery__name">HMM Ballpoint Pen <span>(Black)</span></p>
+                  <p class="gallery__sale">$35.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/7.jpg" alt="images">
+                  <p class="gallery__name">Mist <span>(Black Triblend)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/8.jpg" alt="images">
+                  <p class="gallery__name">Circular <span>(Charcoal)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/9.jpg" alt="images">
+                  <p class="gallery__name">Smell the Roses <span>(Black)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/10.jpg" alt="images">
+                  <p class="gallery__name">Analog Travel Case <span>(Gray)</span></p>
+                  <p class="gallery__sale">$34.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/11.jpg" alt="images">
+                  <p class="gallery__name">HMM Scissors <span>(Black)</span></p>
+                  <p class="gallery__sale">$45.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/12.jpg" alt="images">
+                  <p class="gallery__name">Leather Desk Pad XL <span>(Natural)</span></p>
+                  <p class="gallery__sale">$265.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/13.jpg" alt="images">
+                  <p class="gallery__name">Premium Leather Mousepad XL<br><span>(Ugmonk Logo - Brown)</span></p>
+                  <p class="gallery__sale">$52.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/14.jpg" alt="images">
+                  <p class="gallery__name">Kinto Travel Tumbler <span>(Coyote)</span></p>
+                  <p class="gallery__sale">$35.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/15.jpg" alt="images">
+                  <p class="gallery__name">Discbound Heirloom Journal Bundle<br><span>(Natural Journal + 3
+                      Refills)</span></p>
+                  <p class="gallery__sale">$162.00 <span>$155.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/16.jpg" alt="images">
+                  <p class="gallery__name">Chunky Knit Beanie <span>(Olive)</span></p>
+                  <p class="gallery__sale">$30.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/17.jpg" alt="images">
+                  <p class="gallery__name">Chunky Knit Beanie <span>(Burgundy)</span></p>
+                  <p class="gallery__sale">$30.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/18.jpg" alt="images">
+                  <p class="gallery__name">Men's Essential Tee<br><span>(Starter Kit - 3-Pack)</span></p>
+                  <p class="gallery__sale">$96.00 <span>$89.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/19.jpg" alt="images">
+                  <p class="gallery__name">Craighill Cal Bookend</p>
+                  <p class="gallery__sale">$120.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/20.jpg" alt="images">
+                  <p class="gallery__name">Voyage <span>(Black)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="gallery__items mix analog">
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/5.jpg" alt="images">
+                  <p class="gallery__name">Pen Tray <span>(Maple)</span></p>
+                  <p class="gallery__sale">$38.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/6.jpg" alt="images">
+                  <p class="gallery__name">HMM Ballpoint Pen <span>(Black)</span></p>
+                  <p class="gallery__sale">$35.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/7.jpg" alt="images">
+                  <p class="gallery__name">Mist <span>(Black Triblend)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/8.jpg" alt="images">
+                  <p class="gallery__name">Circular <span>(Charcoal)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/9.jpg" alt="images">
+                  <p class="gallery__name">Smell the Roses <span>(Black)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/10.jpg" alt="images">
+                  <p class="gallery__name">Analog Travel Case <span>(Gray)</span></p>
+                  <p class="gallery__sale">$34.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/11.jpg" alt="images">
+                  <p class="gallery__name">HMM Scissors <span>(Black)</span></p>
+                  <p class="gallery__sale">$45.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/12.jpg" alt="images">
+                  <p class="gallery__name">Leather Desk Pad XL <span>(Natural)</span></p>
+                  <p class="gallery__sale">$265.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/13.jpg" alt="images">
+                  <p class="gallery__name">Premium Leather Mousepad XL<br><span>(Ugmonk Logo - Brown)</span></p>
+                  <p class="gallery__sale">$52.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/14.jpg" alt="images">
+                  <p class="gallery__name">Kinto Travel Tumbler <span>(Coyote)</span></p>
+                  <p class="gallery__sale">$35.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/15.jpg" alt="images">
+                  <p class="gallery__name">Discbound Heirloom Journal Bundle<br><span>(Natural Journal + 3
+                      Refills)</span></p>
+                  <p class="gallery__sale">$162.00 <span>$155.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/16.jpg" alt="images">
+                  <p class="gallery__name">Chunky Knit Beanie <span>(Olive)</span></p>
+                  <p class="gallery__sale">$30.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/17.jpg" alt="images">
+                  <p class="gallery__name">Chunky Knit Beanie <span>(Burgundy)</span></p>
+                  <p class="gallery__sale">$30.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/18.jpg" alt="images">
+                  <p class="gallery__name">Men's Essential Tee<br><span>(Starter Kit - 3-Pack)</span></p>
+                  <p class="gallery__sale">$96.00 <span>$89.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/19.jpg" alt="images">
+                  <p class="gallery__name">Craighill Cal Bookend</p>
+                  <p class="gallery__sale">$120.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/20.jpg" alt="images">
+                  <p class="gallery__name">Voyage <span>(Black)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="gallery__items mix stock">
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/1.jpg" alt="images">
+                  <p class="gallery__name">Analog Starter Kit <span>(Walnut)</span></p>
+                  <p class="gallery__sale">$103.00 <span>$89.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/2.jpg" alt="images">
+                  <p class="gallery__name">Analog Cards <span>(3-Pack)</span></p>
+                  <p class="gallery__sale">$39.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/3.jpg" alt="images">
+                  <p class="gallery__name">The Analog Complete Set</p>
+                  <p class="gallery__sale">$137.00 <span>$130.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/4.jpg" alt="images">
+                  <p class="gallery__name">Pen Tray <span>(Walnut)</span></p>
+                  <p class="gallery__sale">$38.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/5.jpg" alt="images">
+                  <p class="gallery__name">Pen Tray <span>(Maple)</span></p>
+                  <p class="gallery__sale">$38.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/6.jpg" alt="images">
+                  <p class="gallery__name">HMM Ballpoint Pen <span>(Black)</span></p>
+                  <p class="gallery__sale">$35.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/7.jpg" alt="images">
+                  <p class="gallery__name">Mist <span>(Black Triblend)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/8.jpg" alt="images">
+                  <p class="gallery__name">Circular <span>(Charcoal)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/9.jpg" alt="images">
+                  <p class="gallery__name">Smell the Roses <span>(Black)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/13.jpg" alt="images">
+                  <p class="gallery__name">Premium Leather Mousepad XL<br><span>(Ugmonk Logo - Brown)</span></p>
+                  <p class="gallery__sale">$52.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/14.jpg" alt="images">
+                  <p class="gallery__name">Kinto Travel Tumbler <span>(Coyote)</span></p>
+                  <p class="gallery__sale">$35.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/15.jpg" alt="images">
+                  <p class="gallery__name">Discbound Heirloom Journal Bundle<br><span>(Natural Journal + 3
+                      Refills)</span></p>
+                  <p class="gallery__sale">$162.00 <span>$155.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/16.jpg" alt="images">
+                  <p class="gallery__name">Chunky Knit Beanie <span>(Olive)</span></p>
+                  <p class="gallery__sale">$30.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/17.jpg" alt="images">
+                  <p class="gallery__name">Chunky Knit Beanie <span>(Burgundy)</span></p>
+                  <p class="gallery__sale">$30.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/18.jpg" alt="images">
+                  <p class="gallery__name">Men's Essential Tee<br><span>(Starter Kit - 3-Pack)</span></p>
+                  <p class="gallery__sale">$96.00 <span>$89.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/19.jpg" alt="images">
+                  <p class="gallery__name">Craighill Cal Bookend</p>
+                  <p class="gallery__sale">$120.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/20.jpg" alt="images">
+                  <p class="gallery__name">Voyage <span>(Black)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="gallery__items mix sellers">
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/1.jpg" alt="images">
+                  <p class="gallery__name">Analog Starter Kit <span>(Walnut)</span></p>
+                  <p class="gallery__sale">$103.00 <span>$89.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/3.jpg" alt="images">
+                  <p class="gallery__name">The Analog Complete Set</p>
+                  <p class="gallery__sale">$137.00 <span>$130.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/15.jpg" alt="images">
+                  <p class="gallery__name">Discbound Heirloom Journal Bundle<br><span>(Natural Journal + 3
+                      Refills)</span></p>
+                  <p class="gallery__sale">$162.00 <span>$155.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/18.jpg" alt="images">
+                  <p class="gallery__name">Men's Essential Tee<br><span>(Starter Kit - 3-Pack)</span></p>
+                  <p class="gallery__sale">$96.00 <span>$89.00</span></p>
+                </a>
+              </div>
+            </div>
+
+            <div class="gallery__items mix clothing">
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/1.jpg" alt="images">
+                  <p class="gallery__name">Analog Starter Kit <span>(Walnut)</span></p>
+                  <p class="gallery__sale">$103.00 <span>$89.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/2.jpg" alt="images">
+                  <p class="gallery__name">Analog Cards <span>(3-Pack)</span></p>
+                  <p class="gallery__sale">$39.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/3.jpg" alt="images">
+                  <p class="gallery__name">The Analog Complete Set</p>
+                  <p class="gallery__sale">$137.00 <span>$130.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/4.jpg" alt="images">
+                  <p class="gallery__name">Pen Tray <span>(Walnut)</span></p>
+                  <p class="gallery__sale">$38.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/5.jpg" alt="images">
+                  <p class="gallery__name">Pen Tray <span>(Maple)</span></p>
+                  <p class="gallery__sale">$38.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/6.jpg" alt="images">
+                  <p class="gallery__name">HMM Ballpoint Pen <span>(Black)</span></p>
+                  <p class="gallery__sale">$35.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/7.jpg" alt="images">
+                  <p class="gallery__name">Mist <span>(Black Triblend)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/8.jpg" alt="images">
+                  <p class="gallery__name">Circular <span>(Charcoal)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/9.jpg" alt="images">
+                  <p class="gallery__name">Smell the Roses <span>(Black)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/10.jpg" alt="images">
+                  <p class="gallery__name">Analog Travel Case <span>(Gray)</span></p>
+                  <p class="gallery__sale">$34.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/11.jpg" alt="images">
+                  <p class="gallery__name">HMM Scissors <span>(Black)</span></p>
+                  <p class="gallery__sale">$45.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/12.jpg" alt="images">
+                  <p class="gallery__name">Leather Desk Pad XL <span>(Natural)</span></p>
+                  <p class="gallery__sale">$265.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/13.jpg" alt="images">
+                  <p class="gallery__name">Premium Leather Mousepad XL<br><span>(Ugmonk Logo - Brown)</span></p>
+                  <p class="gallery__sale">$52.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/14.jpg" alt="images">
+                  <p class="gallery__name">Kinto Travel Tumbler <span>(Coyote)</span></p>
+                  <p class="gallery__sale">$35.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/15.jpg" alt="images">
+                  <p class="gallery__name">Discbound Heirloom Journal Bundle<br><span>(Natural Journal + 3
+                      Refills)</span></p>
+                  <p class="gallery__sale">$162.00 <span>$155.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/16.jpg" alt="images">
+                  <p class="gallery__name">Chunky Knit Beanie <span>(Olive)</span></p>
+                  <p class="gallery__sale">$30.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/17.jpg" alt="images">
+                  <p class="gallery__name">Chunky Knit Beanie <span>(Burgundy)</span></p>
+                  <p class="gallery__sale">$30.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/18.jpg" alt="images">
+                  <p class="gallery__name">Men's Essential Tee<br><span>(Starter Kit - 3-Pack)</span></p>
+                  <p class="gallery__sale">$96.00 <span>$89.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/19.jpg" alt="images">
+                  <p class="gallery__name">Craighill Cal Bookend</p>
+                  <p class="gallery__sale">$120.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/20.jpg" alt="images">
+                  <p class="gallery__name">Voyage <span>(Black)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="gallery__items mix objects">
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/1.jpg" alt="images">
+                  <p class="gallery__name">Analog Starter Kit<span>(Walnut)</span></p>
+                  <p class="gallery__sale">$103.00 <span>$89.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/2.jpg" alt="images">
+                  <p class="gallery__name">Analog Cards <span>(3-Pack)</span></p>
+                  <p class="gallery__sale">$39.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/3.jpg" alt="images">
+                  <p class="gallery__name">The Analog Complete Set</p>
+                  <p class="gallery__sale">$137.00 <span>$130.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/4.jpg" alt="images">
+                  <p class="gallery__name">Pen Tray <span>(Walnut)</span></p>
+                  <p class="gallery__sale">$38.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/5.jpg" alt="images">
+                  <p class="gallery__name">Pen Tray <span>(Maple)</span></p>
+                  <p class="gallery__sale">$38.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/6.jpg" alt="images">
+                  <p class="gallery__name">HMM Ballpoint Pen <span>(Black)</span></p>
+                  <p class="gallery__sale">$35.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/7.jpg" alt="images">
+                  <p class="gallery__name">Mist <span>(Black Triblend)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/8.jpg" alt="images">
+                  <p class="gallery__name">Circular <span>(Charcoal)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/9.jpg" alt="images">
+                  <p class="gallery__name">Smell the Roses <span>(Black)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/10.jpg" alt="images">
+                  <p class="gallery__name">Analog Travel Case <span>(Gray)</span></p>
+                  <p class="gallery__sale">$34.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/11.jpg" alt="images">
+                  <p class="gallery__name">HMM Scissors <span>(Black)</span></p>
+                  <p class="gallery__sale">$45.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/12.jpg" alt="images">
+                  <p class="gallery__name">Leather Desk Pad XL <span>(Natural)</span></p>
+                  <p class="gallery__sale">$265.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/13.jpg" alt="images">
+                  <p class="gallery__name">Premium Leather Mousepad XL<br><span>(Ugmonk Logo - Brown)</span></p>
+                  <p class="gallery__sale">$52.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/14.jpg" alt="images">
+                  <p class="gallery__name">Kinto Travel Tumbler <span>(Coyote)</span></p>
+                  <p class="gallery__sale">$35.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/15.jpg" alt="images">
+                  <p class="gallery__name">Discbound Heirloom Journal Bundle<br><span>(Natural Journal + 3
+                      Refills)</span></p>
+                  <p class="gallery__sale">$162.00 <span>$155.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/16.jpg" alt="images">
+                  <p class="gallery__name">Chunky Knit Beanie <span>(Olive)</span></p>
+                  <p class="gallery__sale">$30.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/17.jpg" alt="images">
+                  <p class="gallery__name">Chunky Knit Beanie <span>(Burgundy)</span></p>
+                  <p class="gallery__sale">$30.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/18.jpg" alt="images">
+                  <p class="gallery__name">Men's Essential Tee<br><span>(Starter Kit - 3-Pack)</span></p>
+                  <p class="gallery__sale">$96.00 <span>$89.00</span></p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/19.jpg" alt="images">
+                  <p class="gallery__name">Craighill Cal Bookend</p>
+                  <p class="gallery__sale">$120.00</p>
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__link-img" src="images/gallery/20.jpg" alt="images">
+                  <p class="gallery__name">Voyage <span>(Black)</span></p>
+                  <p class="gallery__sale">$36.00</p>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <a class="gallery__btn-shop" href="#">Shop New Arrivals</a>
+        </div>
+      </section>
+      <section class="works">
+        <div class="container">
+          <div class="works__inner">
+            <h2 class="works__title">Analog — The simplest productivity system</h2>
+            <a class="works__btn" href="#">Now Available</a>
+            <a class="works__shop-btn" href="#">Show me how it works</a>
+          </div>
+          <div class="works__circle">
+            1.9 million cards shipped!
+          </div>
+        </div>
+      </section>
+      <section class="journal">
+        <div class="container">
+          <div class="journal__inner">
+            <div class="journal__content">
+              <h2 class="journal__title">Refillable Discbound Journals</h2>
+              <p class="journal__text">Heirloom quality you'll be holding onto for life</p>
+              <a class="journal__shop-btn" href="#">Shop the collection</a>
+            </div>
+            <div class="journal__image">
+              <img class="journal__img" src="images/journal/journal-bg.jpg" alt="image">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="objects">
+        <div class="container">
+          <h3 class="objects__title">Our mission is to create simple, beautiful objects that combine form and function.
+          </h3>
+          <div class="objects__inner">
+            <div class="objects__item">
+              <img class="objects__img" src="images/objects/1.jpg" alt="image">
+              <a class="objects__shop-btn" href="#">Shop Mens</a>
+            </div>
+            <div class="objects__item">
+              <img class="objects__img" src="images/objects/2.jpg" alt="image">
+              <a class="objects__shop-btn" href="#">Shop Womens</a>
+            </div>
+            <div class="objects__item objects__item--big">
+              <img class="objects__img" src="images/objects/3.jpg" alt="image">
+              <a class="objects__shop-btn" href="#">Shop Objects</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="story">
+        <h3 class="story__title">A design studio in Downingtown, PA, creating and curating products that combine form &
+          function</h3>
+        <a class="story__shop-btn" href="#">Read Our Story</a>
+      </section>
+      <section class="form">
+        <form class="form__form" action="">
+          <h3 class="form__title">Stay in the loop</h3>
+          <p class="form__text">Be the first to know when new products drop and get behind-the-scenes content straight
+            from Ugmonk’s founder.</p>
+          <input class="form__input" type="text">
+          <button class="form__btn" type="submit">send</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Customer Service</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Help / FAQ</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Returns & Exchanges</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Sizing</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Gift Cards</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">About</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Our Story</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Shop</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Journal</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">About Our Tees</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Reviews</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__contacts">
+            <div class="footer__contacts-items">
+              <div class="footer__contacts-item">
+                <p class="footer__contacts-author">© Ugmonk 2021</p>
+                <p class="footer__contacts-text">All images and content may not be used without permission</p>
+              </div>
+              <a class="footer__logo" href="#">
+                <img class="footer__logo-img" src="images/footer/footer-logo.svg" alt="footer logo">
+              </a>
+            </div>
+            <div class="footer__social">
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-icon" src="images/footer/instagram.svg" alt="icon">
+              </a>
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-icon" src="images/footer/twitter.svg" alt="icon">
+              </a>
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-icon" src="images/footer/facebook.svg" alt="icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
